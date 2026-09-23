@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_fulfillment_channels",
+  "info": {
+    "singularName": "menu-fulfillment-channel",
+    "pluralName": "menu-fulfillment-channels",
+    "displayName": "MenuFulfillmentChannel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "google_map_location": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "contact_number_1": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pictures": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

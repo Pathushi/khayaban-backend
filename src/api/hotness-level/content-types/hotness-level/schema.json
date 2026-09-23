@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotness_levels",
+  "info": {
+    "singularName": "hotness-level",
+    "pluralName": "hotness-levels",
+    "displayName": "HotnessLevel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

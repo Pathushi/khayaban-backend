@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fulfillment_serving_specs",
+  "info": {
+    "singularName": "fulfillment-serving-spec",
+    "pluralName": "fulfillment-serving-specs",
+    "displayName": "FulfillmentServingSpec"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "serving_capacity_min": {
+      "type": "integer"
+    },
+    "serving_capacity_max": {
+      "type": "integer"
+    },
+    "serving_size_g": {
+      "type": "decimal"
+    },
+    "energy_kcal": {
+      "type": "decimal"
+    },
+    "total_carbs_g": {
+      "type": "decimal"
+    },
+    "added_sugar_g": {
+      "type": "decimal"
+    },
+    "protein_g": {
+      "type": "decimal"
+    },
+    "total_fat_g": {
+      "type": "decimal"
+    },
+    "saturated_fat_g": {
+      "type": "decimal"
+    },
+    "sodium_mg": {
+      "type": "decimal"
+    },
+    "allergen_wheat_gluten": {
+      "type": "boolean"
+    },
+    "allergen_tree_nuts": {
+      "type": "boolean"
+    },
+    "allergen_peanuts": {
+      "type": "boolean"
+    },
+    "pictures": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "fulfillment_channel_menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fulfillment-channel-menu.fulfillment-channel-menu"
+    },
+    "allergen_milk_dairy": {
+      "type": "boolean"
+    }
+  }
+}

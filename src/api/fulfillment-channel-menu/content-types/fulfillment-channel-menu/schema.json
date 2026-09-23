@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fulfillment_channel_menus",
+  "info": {
+    "singularName": "fulfillment-channel-menu",
+    "pluralName": "fulfillment-channel-menus",
+    "displayName": "FulfillmentChannelMenu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pictures": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "videos": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "menu_fulfillment_channel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-fulfillment-channel.menu-fulfillment-channel"
+    }
+  }
+}
