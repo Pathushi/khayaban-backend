@@ -504,7 +504,6 @@ export interface ApiFulfillmentServingSpecFulfillmentServingSpec
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Text;
     energy_kcal: Schema.Attribute.Decimal;
     fulfillment_channel_menu: Schema.Attribute.Relation<
       'oneToOne',
@@ -516,6 +515,7 @@ export interface ApiFulfillmentServingSpecFulfillmentServingSpec
       'api::fulfillment-serving-spec.fulfillment-serving-spec'
     > &
       Schema.Attribute.Private;
+    menu: Schema.Attribute.Relation<'oneToOne', 'api::menu.menu'>;
     pictures: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
@@ -528,7 +528,6 @@ export interface ApiFulfillmentServingSpecFulfillmentServingSpec
     serving_capacity_min: Schema.Attribute.Integer;
     serving_size_g: Schema.Attribute.Decimal;
     sodium_mg: Schema.Attribute.Decimal;
-    title: Schema.Attribute.String;
     total_carbs_g: Schema.Attribute.Decimal;
     total_fat_g: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;

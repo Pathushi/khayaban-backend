@@ -11,12 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
     "price": {
       "type": "decimal"
     },
@@ -86,6 +80,11 @@
     },
     "allergen_milk_dairy": {
       "type": "boolean"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }
