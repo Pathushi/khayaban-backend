@@ -56,6 +56,27 @@
         "videos",
         "audios"
       ]
+    },
+    "openingtimes_monday": {
+      "type": "string"
+    },
+    "openingtimes_tuesday": {
+      "type": "string"
+    },
+    "openingtimes_wednesday": {
+      "type": "string"
+    },
+    "openingtimes_thursday": {
+      "type": "string"
+    },
+    "openingtimes_friday": {
+      "type": "string"
+    },
+    "openingtimes_saturday": {
+      "type": "string"
+    },
+    "openingtimes_sunday": {
+      "type": "string"
     }
   }
 }

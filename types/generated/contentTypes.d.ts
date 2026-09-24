@@ -672,6 +672,13 @@ export interface ApiMenuFulfillmentChannelMenuFulfillmentChannel
       'api::menu-fulfillment-channel.menu-fulfillment-channel'
     > &
       Schema.Attribute.Private;
+    openingtimes_friday: Schema.Attribute.String;
+    openingtimes_monday: Schema.Attribute.String;
+    openingtimes_saturday: Schema.Attribute.String;
+    openingtimes_sunday: Schema.Attribute.String;
+    openingtimes_thursday: Schema.Attribute.String;
+    openingtimes_tuesday: Schema.Attribute.String;
+    openingtimes_wednesday: Schema.Attribute.String;
     pictures: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
