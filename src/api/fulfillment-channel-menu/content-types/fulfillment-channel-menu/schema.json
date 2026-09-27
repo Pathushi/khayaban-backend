@@ -33,8 +33,9 @@
     },
     "menu": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::menu.menu"
+      "relation": "manyToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "fulfillment_channel_menus"
     },
     "menu_fulfillment_channel": {
       "type": "relation",

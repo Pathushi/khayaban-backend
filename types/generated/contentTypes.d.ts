@@ -464,7 +464,7 @@ export interface ApiFulfillmentChannelMenuFulfillmentChannelMenu
       'api::fulfillment-channel-menu.fulfillment-channel-menu'
     > &
       Schema.Attribute.Private;
-    menu: Schema.Attribute.Relation<'oneToOne', 'api::menu.menu'>;
+    menu: Schema.Attribute.Relation<'manyToOne', 'api::menu.menu'>;
     menu_fulfillment_channel: Schema.Attribute.Relation<
       'oneToOne',
       'api::menu-fulfillment-channel.menu-fulfillment-channel'
@@ -716,6 +716,10 @@ export interface ApiMenuMenu extends Struct.CollectionTypeSchema {
       'images' | 'files' | 'videos' | 'audios'
     >;
     description: Schema.Attribute.Text;
+    fulfillment_channel_menus: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::fulfillment-channel-menu.fulfillment-channel-menu'
+    >;
     hotness_level: Schema.Attribute.Relation<
       'oneToOne',
       'api::hotness-level.hotness-level'

@@ -58,6 +58,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::ingredient.ingredient"
+    },
+    "fulfillment_channel_menus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fulfillment-channel-menu.fulfillment-channel-menu",
+      "mappedBy": "menu"
     }
   }
 }
