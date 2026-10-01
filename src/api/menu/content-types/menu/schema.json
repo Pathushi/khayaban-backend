@@ -26,7 +26,7 @@
     },
     "default_picture_1": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "allowedTypes": [
         "images",
         "files",

@@ -711,7 +711,8 @@ export interface ApiMenuMenu extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     default_picture_1: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
+      'images' | 'files' | 'videos' | 'audios',
+      true
     >;
     default_picture_2: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
